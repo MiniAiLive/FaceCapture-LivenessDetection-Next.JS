@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@railway/python",
+      "config": {
+        "pythonVersion": "3.10.13",
+        "installCommand": "pip install gunicorn && pip install -r requirements.txt"
+      }
+    }
+  ]
+}
