@@ -5,7 +5,8 @@
       "use": "@railway/python",
       "config": {
         "pythonVersion": "3.10.13",
-        "installCommand": "pip install gunicorn && pip install -r requirements.txt"
+        "installCommand": "pip install gunicorn==21.2.0 && pip install -r requirements.txt",
+        "startCommand": "gunicorn app:app --bind=0.0.0.0:3001 --workers=2 --timeout 120"
       }
     }
   ]
