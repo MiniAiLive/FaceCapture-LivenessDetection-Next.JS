@@ -1,0 +1,7 @@
+fastapi==0.110.0
+imutils==0.5.4
+numpy==1.26.4
+onnxruntime==1.12.0
+opencv_python==4.8.1.78
+tensorflow==2.15.0
+pyarmor>=7.7.1
