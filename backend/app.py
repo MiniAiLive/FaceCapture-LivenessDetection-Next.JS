@@ -17,7 +17,7 @@ from model.face_emotion import EmotionDetector
 from model.face_maskdetect import MaskDetector
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://face-capture-liveness-detection-web-next-js.vercel.app/"}})  # Allow Vercel domain)
 
 # Initialize detectors
 emotion_detector = EmotionDetector()
